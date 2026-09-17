@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZenBlocks — a block puzzle that does not hurry you</title>
+<meta name="description" content="An 8×8 block puzzle with no timer, no lives and no connection required. Plays in airplane mode, on iPhone and iPad.">
+<style>
+:root{--paper:#f6f4ee;--ink:#23241f;--soft:#6c6d63;--rule:#dedbd0;--moss:#5c7a4e;--clay:#b0603f}
+@media(prefers-color-scheme:dark){:root{--paper:#14150f;--ink:#eceadf;--soft:#9b9c90;--rule:#2b2c23;--moss:#8fb07e;--clay:#d98b66}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);
+ font:17px/1.75 Georgia,"Iowan Old Style","Times New Roman",serif}
+.col{max-width:33rem;margin:0 auto;padding:0 26px}
+header{padding:96px 0 0}
+h1{font-size:clamp(34px,7vw,52px);line-height:1.1;font-weight:400;letter-spacing:-.015em}
+h1 em{font-style:italic;color:var(--moss)}
+.stand{margin-top:20px;font-size:19px;color:var(--soft)}
+/* the board drawing — the only ornament on the page */
+.board{margin:52px auto 0;width:min(272px,72vw);aspect-ratio:1;display:grid;
+ grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);gap:3px}
+.board i{background:var(--rule);border-radius:3px}
+.board i.a{background:var(--moss)} .board i.b{background:var(--clay)}
+.board i.c{background:var(--moss);opacity:.45}
+.cap{margin-top:14px;text-align:center;font:italic 14px/1.6 Georgia,serif;color:var(--soft)}
+p{margin-bottom:17px;color:var(--soft)}
+p b,li b{color:var(--ink);font-weight:700}
+h2{margin:72px 0 18px;font-size:23px;font-weight:400;letter-spacing:-.01em}
+h2::after{content:"";display:block;width:44px;height:2px;background:var(--moss);margin-top:12px}
+hr{border:0;border-top:1px solid var(--rule);margin:64px 0}
+ul{list-style:none}
+ul li{padding:14px 0;border-bottom:1px solid var(--rule);color:var(--soft);font-size:16.5px}
+ul li:last-child{border-bottom:0}
+.pull{font:400 21px/1.6 Georgia,serif;color:var(--ink);border-left:3px solid var(--clay);padding:6px 0 6px 22px;margin:34px 0}
+.get{display:inline-block;margin-top:14px;padding:13px 28px;border:1px solid var(--ink);border-radius:2px;
+ color:var(--ink);text-decoration:none;font:600 15px/1 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.02em}
+.get:hover{background:var(--ink);color:var(--paper)}
+a{color:var(--moss)}
+footer{margin-top:80px;padding:30px 0 70px;border-top:1px solid var(--rule);color:var(--soft);
+ font:14px/1.7 -apple-system,BlinkMacSystemFont,sans-serif;text-align:center}
+</style>
+</head>
+<body><div class="col">
+
+<header>
+  <h1>A block puzzle that <em>does not hurry you.</em></h1>
+  <p class="stand">Eight by eight. No timer, no lives, no energy meter, no connection. The game ends when nothing fits — and that is the only way it ends.</p>
+  <a class="get" href="https://apps.apple.com/app/id6788553253">Get ZenBlocks</a>
+</header>
+
+<div class="board" aria-hidden="true">
+<i></i><i></i><i class="a"></i><i class="a"></i><i></i><i></i><i></i><i></i>
+<i></i><i></i><i class="a"></i><i></i><i></i><i class="b"></i><i class="b"></i><i></i>
+<i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i>
+<i></i><i class="b"></i><i></i><i></i><i></i><i></i><i class="a"></i><i></i>
+<i></i><i class="b"></i><i class="b"></i><i></i><i></i><i></i><i class="a"></i><i></i>
+<i></i><i></i><i></i><i></i><i class="a"></i><i class="a"></i><i class="a"></i><i></i>
+<i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+<i class="b"></i><i class="b"></i><i></i><i></i><i></i><i class="a"></i><i></i><i></i>
+</div>
+<p class="cap">Row three is full. It clears, and the board breathes again.</p>
+
+<h2>How it works</h2>
+<p>Three pieces are offered at a time. Drag them onto the board. Fill a complete row or a complete column and it clears. Clear more than one at once and the combo counter climbs. When none of the three pieces fits anywhere, the game is over — though a Continue can rescue a run you care about.</p>
+<p>That is the whole ruleset. There is nothing to unlock before you understand it, and nothing hidden behind a tutorial.</p>
+
+<div class="pull">Designed to lower your heart rate, not raise it.</div>
+
+<h2>What you get</h2>
+<ul>
+  <li><b>Completely offline.</b> On a plane, in a tunnel, in a basement. The game never needs a connection to be played.</li>
+  <li><b>No timer.</b> Put the phone down mid-move and come back tomorrow; the board is saved after every placement.</li>
+  <li><b>Undo, Bomb and Swap</b> when a board goes wrong — earned by playing, or bought as tokens if you would rather not wait.</li>
+  <li><b>Light and dark</b>, both drawn on purpose rather than one inverted from the other.</li>
+  <li><b>Haptics that match the piece</b>, so a clear feels different from a placement.</li>
+</ul>
+
+<h2>What it costs</h2>
+<p>ZenBlocks is free and shows ads between games. <b>Removing them is one purchase, once</b> — there is no subscription and there will not be one. Token packs for the power-ups are optional and entirely skippable; the best score on the leaderboard can be set without spending anything at all.</p>
+
+<hr>
+
+<h2>Honest about the limits</h2>
+<ul>
+  <li>There is <b>no cloud save and no account</b>. Your best score lives on the device and travels in an encrypted backup — it will not follow you to a second phone in use at the same time.</li>
+  <li>The board is <b>8&times;8 only</b>. There are no other modes, no seasons and no live events.</li>
+  <li>Ads come from Google's network while they are switched on, and the app <b>asks your permission before any tracking</b>. Declining changes nothing about the game.</li>
+</ul>
+
+<footer>
+  <a href="support.html">Support</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy</a> &nbsp;·&nbsp;
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a><br><br>
+  © 2026 Hugo Moriceau &nbsp;·&nbsp; hugomoriceau@icloud.com
+</footer>
+</div></body></html>
